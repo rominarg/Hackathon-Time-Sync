@@ -1,7 +1,8 @@
 # 🌍 Hackathon Time Sync
 
 > **La herramienta definitiva para equipos distribuidos en Latinoamérica.**
-> *Porque coordinar horarios no debería ser más difícil que el reto de la hackathon.*
+> *Calculadora horaria LATAM*
+> <img width="1280" height="794" alt="image" src="https://github.com/user-attachments/assets/d76cefe3-a8ed-4d9c-a34f-5e08885391aa" />
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -15,7 +16,7 @@ Nuestro equipo está formado por integrantes de **5 países distintos**:
 - 🇲🇽 México
 - 🇵🇪 Perú
 
-Cada vez que decíamos *"Nos vemos a las 6"*, nadie sabía si era hora de México, Perú, o  de Argentina o si alguien llegaría 2 horas tarde. Perdimos tiempo valioso de la hackathon calculando diferencias horarias manualmente y confundiendo AM/PM con formato 24h.
+Cada vez que decíamos *"Nos vemos a las 6"*, se nos complicaba la diferencia horaia... Tampoco podiamos hacerlo manualmente...
 
 ## 🚀 La Solución
 Cree **Hackathon Time Sync**, una herramienta web ligera y sin dependencias que nos permite:
