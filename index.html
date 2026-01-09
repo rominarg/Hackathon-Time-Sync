@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Time Sync</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌍 Hackathon Time Sync</h1>
+        
+        <div class="section">
+            <h2>⌚ Hora Actual (En vivo)</h2>
+            <div id="clocks-grid" class="grid">
+                </div>
+        </div>
+
+        <hr>
+
+<div class="section">
+    <h2>📅 Planificador Universal</h2>
+    <p>Elige el país de referencia y la hora propuesta:</p>
+    
+    <div class="control-panel">
+        <div class="input-group">
+            <label>Si en:</label>
+            <select id="base-country-select">
+                </select>
+        </div>
+        
+    <div class="input-group">
+        <label>Son las:</label>
+        <select id="base-time-select">
+            </select>
+    </div>
+
+    <div id="calculator-grid" class="grid">
+        </div>
+</div>
+
+<footer>
+        <p>
+            Desarrollado por <strong>ro-web</strong> 
+        </p>
+        <p class="copyright">
+            &copy; 2026 Hackathon Time Sync
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

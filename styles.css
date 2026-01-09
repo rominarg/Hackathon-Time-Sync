@@ -1,0 +1,112 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent: #00d4ff; 
+    --highlight: #ff0055; 
+    --orange:#ff6a00; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 { text-align: center; color: var(--accent); }
+h2 { border-left: 4px solid var(--highlight); padding-left: 10px; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border: 1px solid #333;
+}
+
+.country-flag { font-size: 1.5rem; display: block; margin-bottom: 5px; }
+.country-name { font-weight: bold; color: #888; font-size: 0.9rem; }
+.time-display { font-size: 1.8rem; font-weight: bold; color: var(--text-color); margin-top: 5px; }
+
+/* Estilo específico para la calculadora */
+.calc-time { color: var(--accent); }
+
+.control-panel {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="time"] {
+    background: #111;
+    border: 1px solid var(--accent);
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.input-group {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
+
+select {
+    background: #111;
+    border: 1px solid var(--accent);
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333; 
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer strong {
+    color: var(--orange); 
+    font-weight: bold;
+}
+
+footer .copyright {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 5px;
+}
