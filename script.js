@@ -3,7 +3,10 @@ const team = [
     { id: "co", country: "Colombia", zone: "America/Bogota", flag: "🇨🇴" },
     { id: "pe", country: "Perú", zone: "America/Lima", flag: "🇵🇪" },
     { id: "mx", country: "México (CDMX)", zone: "America/Mexico_City", flag: "🇲🇽" },
-    { id: "ve", country: "Venezuela", zone: "America/Caracas", flag: "🇻🇪" }
+    { id: "ve", country: "Venezuela", zone: "America/Caracas", flag: "🇻🇪" },
+    { id: "ni", country: "Nicaragua", zone: "America/Managua", flag: "🇳🇮" },
+    { id: "br", country: "Brasil", zone: "America/Sao_Paulo", flag: "🇧🇷" },
+    { id: "cl", country: "Chile", zone: "America/Santiago", flag: "🇨🇱" },  
 ];
 
 //  Referencias al DOM
