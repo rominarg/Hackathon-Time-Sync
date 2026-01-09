@@ -41,6 +41,7 @@ Desarrollé **Hackathon Time Sync**, una aplicación web ligera que permite:
 - **Modo oscuro** orientado a entornos de desarrollo
 - **Compatibilidad total** con navegadores modernos y dispositivos móviles
 - **Gestión automática de DST** mediante la API nativa `Intl` del navegador
+- **Exportación de reuniones en formato `.txt` con horarios locales en AM/PM**
 
 ##  Tecnologías
 - **HTML5:** Estructura semántica.
