@@ -148,3 +148,63 @@ baseCountrySelect.addEventListener('change', updateCalculator);
 
 // Ejecución inicial
 updateCalculator();
+
+// --- 3. Exportar horarios a TXT ---
+
+const exportBtn = document.getElementById("export-txt-btn");
+
+exportBtn.addEventListener("click", () => {
+    const baseZone = baseCountrySelect.value;
+    const baseTime = baseTimeSelect.value; // HH:mm
+    const [hours, minutes] = baseTime.split(":");
+
+    const now = new Date();
+
+    // Fecha base según país seleccionado
+    const baseDateString = now.toLocaleString('en-US', { timeZone: baseZone });
+    const baseDateObj = new Date(baseDateString);
+
+    // Fecha propuesta
+    const proposedBaseDate = new Date();
+    proposedBaseDate.setHours(hours);
+    proposedBaseDate.setMinutes(minutes);
+    proposedBaseDate.setSeconds(0);
+
+    let baseCountryName = team.find(m => m.zone === baseZone)?.country;
+
+    let output = `Hackathon Time Sync\n`;
+    
+   const baseTimeFormatted = proposedBaseDate.toLocaleTimeString('en-US', {
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true
+});
+
+output += `Meeting Time (Base: ${baseCountryName} - ${baseTimeFormatted})\n\n`;
+
+    team.forEach(member => {
+        const targetDateString = now.toLocaleString('en-US', { timeZone: member.zone });
+        const targetDateObj = new Date(targetDateString);
+
+        const diff = targetDateObj.getTime() - baseDateObj.getTime();
+        const calculatedDate = new Date(proposedBaseDate.getTime() + diff);
+
+        const timeString = calculatedDate.toLocaleTimeString('en-US', {
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true
+        });
+
+        output += `${member.flag} ${member.country}: ${timeString}\n`;
+    });
+
+    // Crear archivo TXT
+    const blob = new Blob([output], { type: "text/plain" });
+    const link = document.createElement("a");
+
+    link.href = URL.createObjectURL(blob);
+    link.download = "meeting-time.txt";
+    link.click();
+
+    URL.revokeObjectURL(link.href);
+});

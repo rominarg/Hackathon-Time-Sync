@@ -46,3 +46,6 @@ Desarrollé **Hackathon Time Sync**, una aplicación web ligera que permite:
 - **HTML5:** Estructura semántica.
 - **CSS3:** Variables CSS (Custom Properties), Flexbox y Grid Layout para un diseño responsivo.
 - **JavaScript (ES6+):** Lógica de fechas, manipulación del DOM y uso de `Intl.DateTimeFormat`.
+
+**Live Demo:**  
+🔗 https://rominarg.github.io/Hackathon-Time-Sync/
