@@ -1,10 +1,9 @@
-# 🌍 Hackathon Time Sync
+# 🌍 Hackathon Time Sync -  Calculadora de Horarios LATAM con exportacion TXT para organizar reuniones.
 
 > **Timezone synchronization tool for distributed LATAM teams**  
 
-> *Hackathon Time Sync es una herramienta web diseñada para **resolver de forma simple y confiable la coordinación horaria en equipos distribuidos**, especialmente en Latinoamérica, donde las diferencias de husos horarios suelen generar confusión.
-*
-> <img width="1280" height="794" alt="image" src="https://github.com/user-attachments/assets/d76cefe3-a8ed-4d9c-a34f-5e08885391aa" />
+> *Hackathon Time Sync es una herramienta web diseñada para **resolver de forma simple y confiable la coordinación horaria en equipos distribuidos**, especialmente en Latinoamérica, donde las diferencias de husos horarios suelen generar confusión.*
+
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -47,6 +46,9 @@ Desarrollé **Hackathon Time Sync**, una aplicación web ligera que permite:
 - **HTML5:** Estructura semántica.
 - **CSS3:** Variables CSS (Custom Properties), Flexbox y Grid Layout para un diseño responsivo.
 - **JavaScript (ES6+):** Lógica de fechas, manipulación del DOM y uso de `Intl.DateTimeFormat`.
+
+
+<img width="1920" height="1792" alt="Hackathon_calculadora_de_horarios_latam" src="https://github.com/user-attachments/assets/a63d7ed4-3ed8-4e21-9c1a-5b7b2658e7a0" />
 
 **Live Demo:**  
 🔗 https://rominarg.github.io/Hackathon-Time-Sync/
